@@ -63,7 +63,10 @@ class _SignupPageState extends State<SignupPage> {
                             ),
                           ),
                         ),
-                        TextFormField(
+                      SizedBox(
+                        height: 32,
+                      ),
+                      TextFormField(
                           decoration: InputDecoration(
                             labelText: 'Email',
                             labelStyle: const TextStyle(color: Colors.grey),
@@ -73,7 +76,10 @@ class _SignupPageState extends State<SignupPage> {
                             ),
                           ),
                         ),
-                        TextFormField(
+                      SizedBox(
+                        height: 32,
+                      ),
+                      TextFormField(
                           decoration: InputDecoration(
                             labelText: 'Password',
                             labelStyle: const TextStyle(color: Colors.grey),
@@ -83,7 +89,10 @@ class _SignupPageState extends State<SignupPage> {
                             ),
                           ),
                         ),
-                        TextFormField(
+                      SizedBox(
+                        height: 32,
+                      ),
+                      TextFormField(
                           decoration: InputDecoration(
                             labelText: 'Phone Number',
                             labelStyle: const TextStyle(color: Colors.grey),

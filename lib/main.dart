@@ -1,5 +1,5 @@
+import 'package:digi_store/view/Register/signup.dart';
 import 'package:flutter/material.dart';
-import 'login page/signup.dart';
 
 void main() {
   runApp(const MyApp());
