@@ -1,6 +1,10 @@
+import 'package:digi_store/view/Register/input%20files/username_input.dart';
 import 'package:flutter/material.dart';
 
 import 'color.dart';
+import 'input files/email_input.dart';
+import 'input files/password_input.dart';
+import 'input files/phonenumber_input.dart';
 
 class SignupPage extends StatefulWidget {
   const SignupPage({Key? key}) : super(key: key);
@@ -53,55 +57,19 @@ class _SignupPageState extends State<SignupPage> {
                   Form(
                     child: Column(
                       children: [
-                        TextFormField(
-                          decoration: InputDecoration(
-                            labelText: 'Username',
-                            labelStyle: const TextStyle(color: Colors.grey),
-                            border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(20),
-                              borderSide: const BorderSide(color: Colors.grey),
-                            ),
-                          ),
-                        ),
+                      Username_Input(),
                       SizedBox(
                         height: 32,
                       ),
-                      TextFormField(
-                          decoration: InputDecoration(
-                            labelText: 'Email',
-                            labelStyle: const TextStyle(color: Colors.grey),
-                            border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(20),
-                              borderSide: const BorderSide(color: Colors.grey),
-                            ),
-                          ),
-                        ),
+                      Email_Input(),
                       SizedBox(
                         height: 32,
                       ),
-                      TextFormField(
-                          decoration: InputDecoration(
-                            labelText: 'Password',
-                            labelStyle: const TextStyle(color: Colors.grey),
-                            border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(20),
-                              borderSide: const BorderSide(color: Colors.grey),
-                            ),
-                          ),
-                        ),
+                        Password_Input(),
                       SizedBox(
                         height: 32,
                       ),
-                      TextFormField(
-                          decoration: InputDecoration(
-                            labelText: 'Phone Number',
-                            labelStyle: const TextStyle(color: Colors.grey),
-                            border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(20),
-                              borderSide: const BorderSide(color: Colors.grey),
-                            ),
-                          ),
-                        ),
+                        Phonenumber_Input(),
                         // Add more fields as needed
                       ],
                     ),
