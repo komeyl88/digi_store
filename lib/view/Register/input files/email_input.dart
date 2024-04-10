@@ -12,8 +12,7 @@ class _Email_InputState extends State<Email_Input> {
   Widget build(BuildContext context) {
     return  TextFormField(
       decoration: InputDecoration(
-        labelText: 'Email',
-        labelStyle: const TextStyle(color: Colors.grey),
+        hintText: "Enter your Email",
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(20),
           borderSide: const BorderSide(color: Colors.grey),

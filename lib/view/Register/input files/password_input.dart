@@ -8,15 +8,28 @@ class Password_Input extends StatefulWidget {
 }
 
 class _Password_InputState extends State<Password_Input> {
+  bool _obscureText = true;
+
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      obscureText: _obscureText,
       decoration: InputDecoration(
-        labelText: 'Password',
+        hintText: "Enter your password",
         labelStyle: const TextStyle(color: Colors.grey),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(20),
           borderSide: const BorderSide(color: Colors.grey),
+        ),
+        suffixIcon: IconButton(
+          icon: Icon(
+            _obscureText ? Icons.visibility_off : Icons.visibility,
+          ),
+          onPressed: () {
+            setState(() {
+              _obscureText = !_obscureText;
+            });
+          },
         ),
       ),
     );

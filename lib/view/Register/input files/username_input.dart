@@ -12,7 +12,7 @@ class _Username_InputState extends State<Username_Input> {
   Widget build(BuildContext context) {
     return TextFormField(
       decoration: InputDecoration(
-        labelText: 'Username',
+        hintText: "Enter your Username",
         labelStyle: const TextStyle(color: Colors.grey),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(20),

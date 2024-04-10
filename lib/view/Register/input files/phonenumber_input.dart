@@ -12,7 +12,7 @@ class _Phonenumber_InputState extends State<Phonenumber_Input> {
   Widget build(BuildContext context) {
     return TextFormField(
       decoration: InputDecoration(
-        labelText: 'Phone Number',
+        hintText: "Enter your phone number",
         labelStyle: const TextStyle(color: Colors.grey),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(20),
