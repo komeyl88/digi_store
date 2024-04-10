@@ -15,7 +15,7 @@ class _Register_ButtonState extends State<Register_Button> {
       child: Text(
         "Register",
         style: TextStyle(
-          color: Colors.white,
+          color: Colors.black87, fontWeight: FontWeight.bold,
         ),
       ),
       style: ElevatedButton.styleFrom(
