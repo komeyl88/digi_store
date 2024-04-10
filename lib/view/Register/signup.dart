@@ -2,6 +2,8 @@ import 'package:digi_store/view/Register/input%20files/username_input.dart';
 import 'package:flutter/material.dart';
 
 import 'color.dart';
+import 'evevatedbutton_files/login_button.dart';
+import 'evevatedbutton_files/register_button.dart';
 import 'input files/email_input.dart';
 import 'input files/password_input.dart';
 import 'input files/phonenumber_input.dart';
@@ -46,7 +48,7 @@ class _SignupPageState extends State<SignupPage> {
                       'Register',
                       style: TextStyle(
                         fontSize: 40,
-                        color: Colors.white,
+                        color: Colors.black87,
                         fontWeight: FontWeight.bold,
                         fontFamily: 'obrazec',
                       ),
@@ -122,7 +124,18 @@ class _SignupPageState extends State<SignupPage> {
                         height: 20,
                       ),
                       Password_Input(),
-
+                      SizedBox(
+                        height: 70,
+                      ),
+                      Register_Button(),
+                      SizedBox(
+                        height: 60,
+                      ),
+                      Text("Already have an account ?"),
+                      SizedBox(
+                        height: 16,
+                      ),
+                      Login_Button(),
                       // Add more fields as needed
                     ],
 
